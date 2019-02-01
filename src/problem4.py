@@ -279,7 +279,7 @@ def problem4(seq_of_seq, n):
         sequence =seq_of_seq[k]
         for j in range(len(sequence)):
             number = sequence[j]
-            if is_prime(number)==True:
+            if is_prime(number):
                 if number > n:
                     return number
     return -1
