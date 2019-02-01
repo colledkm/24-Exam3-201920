@@ -140,6 +140,14 @@ def problem1(n):
     # As always, CONTINUE to the next problem if you are STUCK on this one.
     # -------------------------------------------------------------------------
 
+    fibonacci_list = [0,1]
+    counter = 0
+    while True:
+        fibonacci_list.append(fibonacci_list[counter]+fibonacci_list[counter+1])
+        if fibonacci_list[counter+1] >= n:
+            break
+        counter = counter+1
+    return fibonacci_list[counter]
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
